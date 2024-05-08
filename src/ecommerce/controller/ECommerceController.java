@@ -119,7 +119,7 @@ public class ECommerceController implements ECommerceRepository {
 		for(Produto produto : carrinho) {
 			valorTotal += produto.getValor();
 		}
-		System.out.println("Valor total: "+valorTotal);
+		System.out.println("\n\nValor total do carrinho: "+valorTotal);
 	}
 
 	public int gerarID() {
