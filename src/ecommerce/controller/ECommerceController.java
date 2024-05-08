@@ -84,9 +84,9 @@ public class ECommerceController implements ECommerceRepository {
 
 		if (buscaCliente != null) {
 			listarTodosClientes.set(listarTodosClientes.indexOf(buscaCliente), cliente);
-			System.out.println("O produto id: " + cliente.getId() + "foi atualizado com sucesso!");
+			System.out.println("O cliente id: " + cliente.getId() + " foi atualizado com sucesso!");
 		} else
-			System.out.println("O produto id: " + cliente.getId() + " não foi encontrado!");
+			System.out.println("O cliente id: " + cliente.getId() + " não foi encontrado!");
 		
 	}
 
@@ -96,9 +96,9 @@ public class ECommerceController implements ECommerceRepository {
 
 		if (cliente != null) {
 			if (listarTodosClientes.remove(cliente) == true)
-				System.out.println("\nO cliente id: " + id + " foi deletado com sucesso!");
+				System.out.println("\nO cliente id: " + idCliente + " foi deletado com sucesso!");
 		} else
-			System.out.println("\nO cliente id: " + id + " não foi encontrado!");
+			System.out.println("\nO cliente id: " + idCliente + " não foi encontrado!");
 		
 	}
 	
