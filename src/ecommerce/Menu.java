@@ -43,6 +43,13 @@ public class Menu {
 				leia.nextLine();
 				selecao = 0;
 			}
+			
+			if (selecao == 10){
+				System.out.println(Cores.TEXT_WHITE_BOLD + "\nE-commerce");
+				sobre();
+				leia.close();
+				System.exit(0);
+			}
 
 			switch (selecao) {
 			case 1:
@@ -90,12 +97,7 @@ public class Menu {
 
 				keyPress();
 				break;
-			case 10:
-				System.out.println(Cores.TEXT_WHITE_BOLD + "\nE-commerce");
-				sobre();
-				leia.close();
-				System.exit(0);
-				break;
+			
 			default:
 				System.out.println(Cores.TEXT_RED_BOLD + "\nOpção Inválida!\n" + Cores.TEXT_RESET);
 				keyPress();
